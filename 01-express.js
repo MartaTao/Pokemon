@@ -28,3 +28,6 @@ app.use( (req, res) => {
         descripcion:"Page Not Found"
     });
 })
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
