@@ -20,6 +20,7 @@ app.set('view engine','ejs');
 app.use(express.static(__dirname+'/public'));
 // Llamadas a las rutas
 app.use("/pokemon", require("./router/pokemon"));
+app.use("/entrenador", require("./router/entrenador"));
 // Si no se encuentra el recurso (Error 404) con página personalizada
 app.use( (req, res) => {
     res.status(404).render("404",{
