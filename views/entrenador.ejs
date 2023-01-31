@@ -1,8 +1,11 @@
 <%- include("templates/cabecera.ejs", {cabecera:'Panel de Administración'}) %>
     <div class="container">
-        <h1>CRUD Mongo</h1>
-        <a class="btn btn-success btn-block my-4" href="/entrenador/crearEntrenador">Añadir un entrenador</a>
-        <a class="btn btn-success btn-block my-4" href="/">Volver</a>
+        <h1>Lista de entrenadores</h1>
+        <div class="row">
+            <div class="col-6"><a class="btn btn-success btn-block my-4" href="/entrenador/crearEntrenador">Añadir un
+                    entrenador</a></div>
+            <div class="col-6"><a class="btn btn-success btn-block my-4" href="/">Volver</a></div>
+        </div>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -13,6 +16,7 @@
                     <th scope="col">Ciudad</th>
                     <th scope="col">Num gimnasios</th>
                     <th scope="col">Lista de pokémon</th>
+                    <th scope="col">Acción</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,15 +40,12 @@
                                 <%= entrenador.ciudad %>
                             </td>
                             <td>
-                                <td>
-                                    <%= entrenador.numGym %>
-                                </td>
-                                <td>
-                                    <td>
-                                        <td>
-                                            <%= entrenador.lista_Pokemon %>
-                                        </td>
-                                        <td>
+                                <%= entrenador.numGym %>
+                            </td>
+                            <td>
+                                <%= entrenador.lista_Pokemon %>
+                            </td>
+                            <td>
                                 <a class="btn btn-warning btn-sm" href="entrenador/<%= entrenador.id %>">Editar/Eliminar</a>
                             </td>
                         </tr>
