@@ -1,2 +1,2 @@
 # Pokemon
- 
+ Proyecto para desplegar una mini aplicación conectándose a una base de datos en MongoDB. Encontramos un index con el que podemos acceder a la lista de Pokemons y Entrenadores, en ambas podemos crear, editar y eliminar los elementos. Para realizar la aplicación hemos hecho uso de Node.js, Express y usando NPM hemos gestionado diversos módulos, tales como Dotenv, Mongoose, Nodemon, Body-parser y Ejs.
